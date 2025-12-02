@@ -1,0 +1,7 @@
+{
+  "properties": {
+    "description": "Backend for ServiceNow API",
+    "protocol": "http",
+    "url": "https://servicenow-test.service-now.com"
+  }
+}

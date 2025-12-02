@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "path": "weather",
+    "apiRevision": "1",
+    "authenticationSettings": {},
+    "description": "",
+    "isCurrent": true,
+    "displayName": "Weather MCP",
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://aca-weather-ntmcbhcmgzxzg.politebush-ed49e0b7.westeurope.azurecontainerapps.io/weather",
+    "subscriptionKeyParameterNames": {
+      "header": "api-key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": false
+  }
+}

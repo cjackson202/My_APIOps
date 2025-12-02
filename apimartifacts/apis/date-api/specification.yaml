@@ -1,0 +1,32 @@
+openapi: 3.0.1
+info:
+  title: Date API
+  description: ''
+  version: '1.0'
+servers:
+  - url: https://apim-ntmcbhcmgzxzg.azure-api.net
+paths:
+  /date:
+    get:
+      summary: Get Date
+      operationId: get-date
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              example:
+                date: '2025-06-09T14:00:00.0000000+00:00'
+components:
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      name: Ocp-Apim-Subscription-Key
+      in: header
+    apiKeyQuery:
+      type: apiKey
+      name: subscription-key
+      in: query
+security:
+  - apiKeyHeader: [ ]
+  - apiKeyQuery: [ ]

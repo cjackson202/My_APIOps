@@ -1,0 +1,17 @@
+{
+  "properties": {
+    "path": "camerjackson-9533ai/models",
+    "apiRevision": "1",
+    "authenticationSettings": {},
+    "isCurrent": true,
+    "displayName": "camerjackson-9533ai",
+    "protocols": [
+      "https"
+    ],
+    "subscriptionKeyParameterNames": {
+      "header": "api-key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": false
+  }
+}
