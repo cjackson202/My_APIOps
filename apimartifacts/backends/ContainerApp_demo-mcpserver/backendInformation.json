@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "description": "demo-mcpserver",
+    "protocol": "http",
+    "resourceId": "https://management.azure.com/subscriptions/04111ead-4a81-46d8-bc64-74cd5d3026af/resourceGroups/appsrg/providers/Microsoft.App/containerApps/demo-mcpserver",
+    "url": "https://demo-mcpserver.yellowmeadow-cbea0cf8.eastus2.azurecontainerapps.io"
+  }
+}

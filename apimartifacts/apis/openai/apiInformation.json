@@ -1,0 +1,18 @@
+{
+  "properties": {
+    "path": "openai",
+    "apiRevision": "1",
+    "authenticationSettings": {},
+    "description": "Azure OpenAI APIs for completions and search",
+    "isCurrent": true,
+    "displayName": "OpenAI",
+    "protocols": [
+      "https"
+    ],
+    "subscriptionKeyParameterNames": {
+      "header": "api-key",
+      "query": "api-key"
+    },
+    "subscriptionRequired": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "path": "servicenow",
+    "apiRevision": "1",
+    "authenticationSettings": {},
+    "description": "",
+    "isCurrent": true,
+    "displayName": "ServiceNow MCP",
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://aca-servicenow-ntmcbhcmgzxzg.politebush-ed49e0b7.westeurope.azurecontainerapps.io/servicenow",
+    "subscriptionKeyParameterNames": {
+      "header": "api-key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": false
+  }
+}

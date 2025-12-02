@@ -1,0 +1,24 @@
+<policies>
+	<inbound>
+		<base />
+		<llm-semantic-cache-lookup score-threshold="0" embeddings-backend-id="camerjackson-9533ai-ai-endpoint" embeddings-backend-auth="system-assigned">
+			<vary-by>@(context.Subscription.Id)</vary-by>
+		</llm-semantic-cache-lookup>
+		<!-- Emit token usage metrics -->
+		<llm-emit-token-metric namespace="metric namespace">
+			<dimension name="dimension name" value="dimension value" />
+		</llm-emit-token-metric>
+		<rate-limit-by-key calls="2" renewal-period="90" counter-key="@(context.Request.IpAddress)" increment-condition="@(true)" remaining-calls-variable-name="remainingCallsPerIp" />
+		<set-backend-service id="apim-generated-policy" backend-id="camerjackson-9533ai-ai-endpoint" />
+	</inbound>
+	<backend>
+		<base />
+	</backend>
+	<outbound>
+		<llm-semantic-cache-store duration="60" />
+		<base />
+	</outbound>
+	<on-error>
+		<base />
+	</on-error>
+</policies>

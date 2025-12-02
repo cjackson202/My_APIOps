@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "displayName": "OpenAI Subscription",
+    "scope": "/subscriptions/04111ead-4a81-46d8-bc64-74cd5d3026af/resourceGroups/lab-model-context-protocol/providers/Microsoft.ApiManagement/service/apim-ntmcbhcmgzxzg/apis/openai",
+    "allowTracing": false,
+    "state": "active"
+  }
+}

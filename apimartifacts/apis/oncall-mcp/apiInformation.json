@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "path": "oncall",
+    "apiRevision": "1",
+    "authenticationSettings": {},
+    "description": "",
+    "isCurrent": true,
+    "displayName": "Oncall MCP",
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://aca-oncall-ntmcbhcmgzxzg.politebush-ed49e0b7.westeurope.azurecontainerapps.io/oncall",
+    "subscriptionKeyParameterNames": {
+      "header": "api-key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": false
+  }
+}
