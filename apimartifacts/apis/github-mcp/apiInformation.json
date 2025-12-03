@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "path": "github",
+    "apiRevision": "1",
+    "authenticationSettings": {},
+    "description": "",
+    "isCurrent": true,
+    "displayName": "GitHub MCP",
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://aca-github-ntmcbhcmgzxzg.politebush-ed49e0b7.westeurope.azurecontainerapps.io/github",
+    "subscriptionKeyParameterNames": {
+      "header": "api-key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": false
+  }
+}

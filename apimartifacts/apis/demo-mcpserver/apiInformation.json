@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "path": "mcp",
+    "apiRevision": "1",
+    "authenticationSettings": {},
+    "description": "",
+    "isCurrent": true,
+    "displayName": "demo-mcpserver",
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://demo-mcpserver.yellowmeadow-cbea0cf8.eastus2.azurecontainerapps.io",
+    "subscriptionKeyParameterNames": {
+      "header": "Ocp-Apim-Subscription-Key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": false
+  }
+}
