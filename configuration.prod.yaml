@@ -1,6 +1,13 @@
 apimServiceName: apiops-apim
 namedValues:
 loggers:
+  - name: apim-logger
+    type: applicationInsights
+    description: APIM Logger
+    credentials:
+      instrumentationKey: ${{ secrets.APPLICATION_INSIGHTS_INSTRUMENTATION_KEY }}   # Use the key for your destination App Insights
+    resourceId: /subscriptions/04111ead-4a81-46d8-bc64-74cd5d3026af/resourceGroups/lab-model-context-protocol/providers/Microsoft.Insights/components/insights-ntmcbhcmgzxzg
+    isBuffered: false
 diagnostics:
 backends:
 apis:
