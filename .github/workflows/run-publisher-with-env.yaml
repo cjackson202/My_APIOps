@@ -49,6 +49,7 @@ jobs:
         # specify environment specific secrets to be replaced. For example the QA environment could have a different set sercrets to
         # replace within the configuration.[environment].yaml file
         env:
+          APPLICATION_INSIGHTS_INSTRUMENTATION_KEY: ${{ secrets.APPLICATION_INSIGHTS_INSTRUMENTATION_KEY }}
           testSecretValue: ${{ secrets.AZURE_RESOURCE_GROUP_NAME }}
 
       - name: Run publisher without Config Yaml but with Commit ID
