@@ -52,6 +52,16 @@ jobs:
           APPLICATION_INSIGHTS_INSTRUMENTATION_KEY: ${{ secrets.APPLICATION_INSIGHTS_INSTRUMENTATION_KEY }}
           testSecretValue: ${{ secrets.AZURE_RESOURCE_GROUP_NAME }}
 
+      # Replace tokens in artifacts folder for all environments
+      - name: "Perform secret substitution in artifacts folder"
+        uses: cschleiden/replace-tokens@v1.3
+        with:
+          tokenPrefix: "{#"
+          tokenSuffix: "#}"
+          files: '["**/apimartifacts/**/*.json"]'
+        env:
+          APPLICATION_INSIGHTS_INSTRUMENTATION_KEY: ${{ secrets.APPLICATION_INSIGHTS_INSTRUMENTATION_KEY }}
+
       - name: Run publisher without Config Yaml but with Commit ID
         if: ( inputs.CONFIGURATION_YAML_PATH == '' &&  inputs.COMMIT_ID != '')
         env:
