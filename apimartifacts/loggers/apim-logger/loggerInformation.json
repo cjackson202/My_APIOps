@@ -2,7 +2,7 @@
   "properties": {
     "loggerType": "applicationInsights",
     "credentials": {
-      "instrumentationKey": "{{Logger-Credentials--6846da9ec22a8e22f09e05ea}}"
+      "instrumentationKey": "{#APPLICATION_INSIGHTS_INSTRUMENTATION_KEY#}"
     },
     "description": "APIM Logger",
     "isBuffered": false,
