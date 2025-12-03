@@ -1,11 +1,15 @@
 apimServiceName: apiops-apim
 namedValues:
+  - name: Logger-Credentials--6846da9ec22a8e22f09e05ea
+    displayName: Logger-Credentials--6846da9ec22a8e22f09e05ea
+    secret: true
+    value: {#APPLICATION_INSIGHTS_INSTRUMENTATION_KEY#}
 loggers:
   - name: apim-logger
     type: applicationInsights
     description: APIM Logger
     credentials:
-      instrumentationKey: {#APPLICATION_INSIGHTS_INSTRUMENTATION_KEY#}
+      instrumentationKey: "{{Logger-Credentials--6846da9ec22a8e22f09e05ea}}"
     resourceId: /subscriptions/04111ead-4a81-46d8-bc64-74cd5d3026af/resourceGroups/lab-model-context-protocol/providers/Microsoft.Insights/components/insights-ntmcbhcmgzxzg
     isBuffered: false
 diagnostics:
